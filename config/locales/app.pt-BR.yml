@@ -1,0 +1,358 @@
+pt-BR:
+  errors:
+    no_record: "Não há nenhum registro"
+    messages:
+      invalid_date: "Não é uma data válida"
+      invalid_time: "Não ẽ uma hora válida"
+      invalid_datetime: "Não é uma data/hora válida"
+      is_at: "Deve estar em %{restriction}"
+      before: "Deve ser antes %{restriction}"
+      on_or_before: "Deve ser até %{restriction}"
+      after: "deve ser depois %{restriction}"
+      on_or_after: "must be on or after %{restriction}"
+
+  format_email: "O formato do e-mail está inválido."
+
+  layouts:
+    application:
+      site_name: Plataforma de Investimento
+  application:
+    header:
+      site_name: Plataforma de Investimento
+      logout: Encerrar
+      main-page: Menu principal
+      sign-in: Entrar
+      new-account: Registrar conta
+
+  admin:
+    home:
+      name: "Home"
+    date:
+      month_names:
+      -
+      - Janeiro
+      - Fevereiro
+      - Março
+      - Abril
+      - Maio
+      - Junho
+      - Julho
+      - Agosto
+      - Setembro
+      - Outubro
+      - Novembro
+      - Dezembro
+    misc:
+      search: "Procurar"
+      filter: "Filtrar"
+      refresh: "Atualizar"
+      show_all: "Mostrar tudo"
+      add_filter: "Novo Filtro..."
+      bulk_menu_title: "Itens selecionados..."
+      remove: "Remover"
+      add_new: "Criar Novo"
+      chosen: "%{name} escolhido"
+      chose_all: "Escolher tudo"
+      clear_all: "Limpar tudo"
+      up: "Cima"
+      down: "Baixo"
+      navigation: "Navegação"
+      log_out: "Terminar Sessão"
+      ago: "atrás"
+    flash:
+      successful: "Registro criado com sucesso!"
+    table_headers:
+      model_name: "Nome do modelo"
+      last_used: "Última vez usado em"
+      records: "Registros"
+      username: "Usuário"
+      changes: "Alterações"
+      created_at: "Data/Hora"
+      last_created: "Última atualização"
+      item: "Item"
+      message: "Mensagem"
+    actions:
+      dashboard:
+        title: "Administração Plataforma de Investimento"
+        menu: "Dashboard"
+        breadcrumb: "Dashboard"
+      index:
+        title: "Lista de %{model_label_plural}"
+        menu: "Lista"
+        breadcrumb: "%{model_label_plural}"
+      show:
+        title: "Detalhes para %{model_label} '%{object_label}'"
+        menu: "Mostrar"
+        breadcrumb: "%{object_label}"
+      show_in_app:
+        menu: "Mostrar na aplicação"
+      new:
+        title: "Novo %{model_label}"
+        menu: "Criar novo"
+        breadcrumb: "Novo"
+        link: "Criar um novo %{model_label}"
+        done: "criado"
+      edit:
+        title: "Editar %{model_label} '%{object_label}'"
+        menu: "Editar"
+        breadcrumb: "Editar"
+        link: "Editar este %{model_label}"
+        done: "atualizado"
+      delete:
+        title: "Remover %{model_label} '%{object_label}'"
+        menu: "Remover"
+        breadcrumb: "Remover"
+        link: "Remover '%{object_label}'"
+        done: "removido"
+      bulk_delete:
+        title: "Remover %{model_label_plural}"
+        menu: "Remover vários"
+        breadcrumb: "Remover vários"
+        bulk_link: "Remover selecionados %{model_label_plural}"
+      export:
+        title: "Exportar %{model_label}"
+        menu: "Exportar"
+        breadcrumb: "Exportar"
+        link: "Exportar %{model_label_plural} encontrados"
+        bulk_link: "Exportar %{model_label_plural} selecionados"
+        done: "exportados"
+    form:
+      cancel: "Cancelar"
+      basic_info: "Informação Básica"
+      required: "Obrigatórios"
+      optional: "Opcional"
+      one_char: "caracter"
+      char_length_up_to: "comprimento até"
+      char_length_of: "comprimento de"
+      save: "Gravar"
+      save_and_add_another: "Gravar e criar outro"
+      save_and_edit: "Gravar e editar"
+      all_of_the_following_related_items_will_be_deleted: "? Os seguintes item serão apagados ou deixados orfãos:"
+      are_you_sure_you_want_to_delete_the_object: "Tem a certeza que quer apagar este %{model_name}"
+      confirmation: "Sim, tenho a certeza"
+      delete_confirmation: "Confirmar apagar"
+      bulk_delete: "Os seguintes objetos serão apagados, o que pode apagar ou deixar orfãos as dependências relacionadas"
+    export:
+      confirmation: "Exportar para %{name}"
+      select: "Selecionar campos para exportar"
+      fields_from: "Campos de %{name}"
+      fields_from_associated: "Campos associados com %{name}"
+      display: "Mostrar %{name}: %{type}"
+      options_for: "Opções para %{name}"
+      empty_value_for_associated_objects: "<vazio>"
+      click_to_reverse_selection: 'Click para inverter selecção'
+    csv:
+        header_for_root_methods: "%{name}" # 'model' is available
+        header_for_association_methods: "%{name} [%{association}]"
+        encoding_to: "Codificar para"
+        encoding_to_help: "Escolha a codificação. Deixe em branco para manter a codificação original: (%{name})"
+        skip_header: "Sem cabeçalho"
+        skip_header_help: "Não gerar cabeçalhos para (Campos sem cabeçalho)"
+        default_col_sep: ","
+        col_sep: "Separador de colunas"
+        col_sep_help: "Deixar em branco para usar omissão ('%{value}')" # value is default_col_sep
+  devise:
+    sessions:
+      new:
+        title: Entrar
+        submit: Entrar
+        forgot-password: Esqueci minha senha
+    passwords:
+      new:
+        title: Esqueci minha senha
+        submit: Enviar instruções p/ alterar a senha
+      edit:
+        title: Alterar a senha
+        submit: Salvar
+        new-password: Nova senha
+        confirm-new-password: Confirmar nova senha
+    registrations:
+      new:
+        title: Registrar conta
+        submit: Registrar
+      edit:
+        title: Editar conta
+        submit: Salvar
+        password-hint: Se não quiser alterar deixe em branco
+        current-password-hint: Digite sua senha atual para confirmar as alterações
+        cancel-account: Encerrar a conta
+        cancel-confirm: Tem certeza que deseja cancelar?
+  models_and_attributes: &models_and_attributes
+    models:
+      user:
+        one: "Usuário"
+        other: "Usuários"
+      address:
+        one: "Endereço"
+        other: "Endereços"
+      app_config:
+        one: "Configuração"
+        other: "Configurações"
+      bank_account:
+        one: "Conta"
+        other: "Contas"
+      bank:
+        one: "Banco"
+        other: "Bancos"
+      contact:
+        one: "Contato"
+        other: "Contatos"
+      investment:
+        one: "Investimemto"
+        other: "Investimentos"
+      investor_investment:
+        one: "Investimento de investidor"
+        other: "Investimentos de investidores"
+      investor:
+        one: "Investidor"
+        other: "Investidores"
+      suitability:
+        one: "Perfil de investimento"
+        other: "Perfis de investimentos"
+      role:
+        one: "Regra"
+        other: "Regras"
+      roles_user:
+        one: "Regras do usuário"
+        other: "Regras dos usuários"
+      uf:
+        one: "Estado"
+        other: "Estados"
+      ahoy::event:
+        one: "Evento"
+        other: "Eventos"
+    attributes:
+      user:
+        username: "Nome"
+        email: "E-mail"
+        password: "Senha"
+        password_confirmation: "Confirmar Senha"
+        is_active: "Situação do Usuário"
+        user_type: "Tipo de Usuário"
+        remember_me: "Mantenha-me Conectado"
+        current_password: "Senha Atual"
+        created_at: "Criado em:"
+        updated_at: "Atualizado em:"
+      address:
+        investor: "Investidor"
+        street: "Endereço"
+        number: "Número"
+        complement: "Complemento"
+        neighborhood: "Bairro"
+        city: "Cidade"
+        cep: "Cep"
+        uf_id: "Estado"
+        country: "País"
+
+        created_at: "Criado em:"
+        updated_at: "Atualizado em:"
+      app_config:
+        name: "Nome"
+        value: "Valor"
+        is_active: "Ativo"
+        created_at: "Criado em:"
+        updated_at: "Atualizado em:"
+      bank_account:
+        branch: "Agência bancária"
+        number: "Número"
+        account_type: "Tipo de Conta"
+        pix_key: "Chave do Pix"
+        pix_key_type: "Tipo de Chave do Pix"
+        investor_id: "Investidor"
+        bank_id: "Banco"
+        created_at: "Criado em:"
+        updated_at: "Atualizado em:"
+      bank:
+        name: "Nome"
+        code: "Código"
+        created_at: "Criado em:"
+        updated_at: "Atualizado em:"
+      contact:
+        investor: "Investidor"
+        data_type: "Tipo de dados"
+        value: "Valor"
+        created_at: "Criado em:"
+        updated_at: "Atualizado em:"
+      investment:
+        acquisition_value: "Valor de aquisição"
+        operational_costs: "Custos operacionais"
+        shares: "Ações"
+        share_value: "Valor ações"
+        max_shares_by_investor: "Ações máximas por investodor"
+        estimated_deadline: "Prazo estimado de retorno"
+        estimated_profitability: "Rentabilidade estimada"
+        current_profitability: "Rentabilidade atual"
+        effective_profitability: "Rentabilidade efetiva"
+        monetary_restatement: "Atualização monetária"
+        restatement_base_date: "Data base de atualização"
+        is_active: "Ativo"
+        precatorio: "Precatório"
+        risk: "Risco"
+        attachments: "Anexos"
+        investor_investments: "Investimento de investidores"
+        investors: "Investidor"
+        created_at: "Criado em:"
+        updated_at: "Atualizado em:"
+      investor_investment:
+        investment: "Investimento"
+        investor: "Investidor" 
+        shares_acquired: "Ações adquiridas"
+        contract: "Contrato"
+        invoice: "Fatura"
+        status: "Status"
+        risk_acknowledged_at: "Risco reconhecido em:"
+        created_at: "Criado em:"
+        updated_at: "Atualizado em:"
+      investor:
+        user: "Usuário"
+        is_active: "Ativo"
+        first_name: "Nome"
+        last_name: "Sobrenome"
+        gender: "Gênero"
+        cpf: "CPF"
+        rg_uf: "UF do RG"
+        rg_number: "Identidade"
+        address: "Endereço"
+        birth_date: "Data de nascimento"
+        place_of_birth: "Cidade natal"
+        nationality: "Nacionalidade"
+        attachments: "Anexos"
+        signer_id: "Código da assinatura"
+        term_accepted_at: "Termo aceito em:"
+        contacts: "Contato"
+        bank_account: "Conta bancária"
+        investor_investments: "Investimento de investidores"
+        investments: "Investimento"
+        suitabilities: "Perfil de Investimento"
+        created_at: "Criado em:"
+        updated_at: "Atualizado em:"
+      suitability:
+        investor: "Investidor"
+        income_percentage_on_investment: "Porcentagem de renda sobre o investimento"
+        investment_performance_evaluation_frequency: "Frequência de avaliação de desempenho de investimento"
+        academic_education: "Educação acadêmica"
+        financial_market_experience: "Experiência no mercado financeiro"
+        investment_experience: "Experiência em investimento"
+        term_for_full_redemption: "Prazo para resgate total"
+        goals: "Metas"
+        behavior_with_negative_news: "Comportamento com notícias negativas"
+        short_term_redemption: "Resgate de curto prazo"
+        previous_experience: "Experiência anterior"
+        created_at: "Criado em:"
+        updated_at: "Atualizado em:"
+      role:
+        model: "Modelo"
+        action: "Ação"
+      roles_user:
+        role: "Regra"
+        user: "Usuário"
+      uf:
+        name: "Nome"
+        acronym: "Sigla"
+        created_at: "Criado em:"
+        updated_at: "Atualizado em:"
+
+  activerecord:
+    <<: *models_and_attributes
+  activemodel:
+    <<: *models_and_attributes

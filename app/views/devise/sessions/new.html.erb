@@ -1,0 +1,79 @@
+<section class='cerebrum-section11'>
+  <div class='container'>
+    <div class='row min-vh-100 align-items-center justify-content-center'>
+      <div class='col-lg-7 pe-lg-4 pe-xl-12'>
+        <div class='img-cerebrum'>
+          <%= image_tag('cerebro.png', alt: '')%>
+        </div>
+        <h3 class="display-4 w-350 fs-48">
+          Typewriter delectus cred
+        </h3>
+        <p class="lead w-260 fs-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales ligula quis scelerisque malesuada.</p>
+        <div class="pt-7">
+          <%= image_tag('Logo_Horizontal.png', class: '', alt: 'Logo') %>
+        </div>
+      </div>
+      <div class='col-lg-5'>
+        <div class='card remove-border top-login pt-100'>
+          <div class='list-locale'>
+            
+          </div>
+          <div class='card-body'>
+            <div class=''>
+              <a href="<%= request.path %>?locale=en">
+                <span class="flag-icon flag-icon-us">Inglês</span>
+              </a>
+              <a href="<%= request.path %>?locale=pt-BR">
+                <span class="flag-icon flag-icon-br">Português</span>
+              </a>
+            </div>
+            <div class="pb-4 text-left">
+              <h3 class="mb-2 fs-20"><%= translate 'login.text_login' %></h3>
+            </div>
+            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+              <div class="form-group mb-3">
+                <%= f.label :email, class: 'form-label fs-18' %>
+                <%= f.email_field :email, class: "form-control", id: "prec", required: true, placeholder: 'seunome@gmail.com' %>
+              </div>
+              <div class="form-group mb-3">
+                <%= f.label :password, class: 'form-label fs-18' %>
+                <%= f.password_field :password, class: "form-control", id: "prec", required: true, placeholder: '***********' %>
+              </div>
+              <div class="pt-2">
+                <button class="btn btn-primary w-100"><%= translate 'login.sign_in' %></button>
+              </div>
+              <div class="py-2 text-center">
+                <small class='horizontal-line-words fs-20'><%= translate 'login.or_log_with' %></small>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 my-2">
+                    <a class="btn btn-light w-100" href="#">
+                        <span class="btn-inner-icon">
+                          <i class="fa fa-github"></i>
+                        </span>
+                        <span class="btn-inner-text">
+                          Google
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-6 my-2">
+                    <a class="btn btn-light w-100" href="#">
+                      <span class="btn-inner-icon">
+                        <i class="fa fa-google"></i>
+                      </span>
+                      <span class="btn-inner-text">
+                        Facebook
+                      </span>
+                    </a>
+                </div>
+                <div class="mt-3 text-center"><small class='fs-20'><%= "#{translate 'login.no_account'}" %></small> <%= link_to "#{translate 'login.try_free'}", new_registration_path(resource_name), class: 'small font-weight-bold fs-20' %> </div>
+                <div class="mt-3 text-center "><%= link_to "#{translate 'login.forgot_password'}", new_password_path(resource_name), class: 'small font-weight-bold forgot-pwd-color fs-20' %></div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

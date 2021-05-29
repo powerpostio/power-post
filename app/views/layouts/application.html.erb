@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PowerPost</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <main>
+      <% if controller_name == 'sessions' %>
+        <%= yield %>
+      <% elsif controller_name == 'registrations' %>
+        <%= yield %>
+      <% else %>
+        <%= yield %>
+      <% end %>
+    </main>
+    <script>
+      function bntCreate() {
+        var checkBox = document.getElementById("checkCreate")
+        if (checkBox.checked == true){
+          document.getElementById("btnCreateAccount").classList.add('btn-primary');
+          document.getElementById("btnCreateAccount").classList.remove('btn-default');
+          document.getElementById("btnCreateAccount").disabled = false;
+        } else {
+          document.getElementById("btnCreateAccount").classList.add('btn-default');
+          document.getElementById("btnCreateAccount").classList.remove('btn-primary');
+          document.getElementById("btnCreateAccount").disabled = true;
+        }
+              
+      }
+
+      function myFunction() {
+        // Get the checkbox
+        var checkBox = document.getElementById("myCheck");
+        // Get the output text
+        var span = document.getElementById("byValue");
+
+        // If the checkbox is checked, display the output text
+        if (checkBox.checked == true){
+          document.getElementById('valor1').innerHTML = 1.596;
+          document.getElementById('valor2').innerHTML = "2.380";
+          document.getElementById('valor3').innerHTML = "3.840";
+          document.getElementById('valor3').innerHTML = "3.840";
+          document.getElementById('typePlan1').innerHTML = "Por ano";
+          document.getElementById('typePlan2').innerHTML = "Por ano";
+          document.getElementById('typePlan3').innerHTML = "Por ano";
+          span.style.display = "block";
+        } else {
+          document.getElementById('valor1').innerHTML = 133;
+          document.getElementById('valor2').innerHTML = 240;
+          document.getElementById('valor3').innerHTML = 320;
+          document.getElementById('typePlan1').innerHTML = "Por mês";
+          document.getElementById('typePlan2').innerHTML = "Por mês";
+          document.getElementById('typePlan3').innerHTML = "Por mês";
+          span.style.display = "none";
+        }
+      }
+      var elem = document.querySelector('.js-switch');
+      var init = new Switchery(elem);
+    </script>
+  </body>
+</html>

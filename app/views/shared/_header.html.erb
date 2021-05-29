@@ -1,0 +1,17 @@
+<header class="header-main header-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <%= link_to image_tag('Logo_Horizontal.png'), root_path,  class: 'navbar-brand' %>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <%= link_to "Premium", planos_path, class:'nav-link' %>
+          </li>
+        </ul>
+        <div class="extra-menu d-none d-lg-block">
+          <%= link_to "#{translate 'login.sign_in'}", new_session_path(resource_name), class: "btn btn-primary btn-access" %>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

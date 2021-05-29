@@ -1,0 +1,18 @@
+default: &default
+  FACEBOOK_APP_ID: '315561106647905'
+  FACEBOOK_APP_SECRET: 'e81441b13da28f0fdff8a692d8385086'
+  GOOGLE_APP_ID: '233566483920-0qiu91s5o9m4k95h93hgjvu84v7ivf3f.apps.googleusercontent.com'
+  GOOGLE_APP_SECRET: '_ywJMnBcMbTOr2EYTXh9Gbfh'
+  #code: 'ffef4397304858c8a6e4a5da6e9d3d45'
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+
+staging:
+  <<: *default

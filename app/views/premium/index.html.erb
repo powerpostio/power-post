@@ -1,0 +1,140 @@
+<%= render partial: 'shared/header' %>
+<main>
+  <section class='section'>
+    <div class='container'>
+      <div class='row justify-content-center section-heading'>
+        <div class="col-lg-12 col-xl-11 text-center">
+          <h2 class="display-4 fs-40">Escolha seu plano</h2>
+          <div class="lead fs-20">Escolha um plano e expanda suas possibilidades de gestão <br/>Aproveite 7 dias grátis.</div>
+          <span class='fs-20'>Fatura mensal</span><input type="checkbox" id="myCheck" class="js-switch" style="margin-left: 10px;margin-right: 10px;margin-top: 30px;" onclick="myFunction()" /><span class='fs-20'>Fatura anual</span>
+          <div class='row'>
+            <div class="col-md-6 col-lg-3 my-3">
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <div class="card remove-border">
+                <div class="card-body">
+                  <h4 class="float-left fs-40">Básico</h4>
+                  <div class="display-4 mb-4 block-plan"><span class='s-rs'>R$</span><span id='valor1' class='fs-48'>133</span></div>
+                  <p id='typePlan1' class="mb-4 block-plan fs-20">Por mês</p>
+                  <a class="btn btn-lg w-100 btn-light border-pill fs-title-btn-plan" href="#">Plano Básico</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <div class="card remove-border">
+                <div class="card-body">
+                  <h4 class="float-left fs-40">Pro</h4>
+                  <span id='byValue' class='by-value' style="display: none;">de 2.880</span>
+                  <div class="display-4 mb-4 block-plan"><span class='s-rs'>R$</span><span id='valor2' class='fs-48'>240</span></div>
+                  <p id='typePlan2' class="mb-4 block-plan fs-20">Por mês<span>-%25</span></p>
+                  <a class="btn btn-lg w-100 btn-primary border-pill fs-title-btn-plan" href="#">Plano Pro</a>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <div class="card remove-border">
+                <div class="card-body">
+                  <h4 class="float-left fs-40">Especialista</h4>
+                  <div class="display-4 mb-4 block-plan"><span class='s-rs'>R$</span><span id='valor3' class='fs-48'>320</span></div>
+                  <p id='typePlan3' class="mb-4 block-plan fs-20">Por mês</p>
+                  <a class="btn btn-lg w-100 btn-light border-pill fs-title-btn-plan" href="#">Plano Especialista</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='row border-plan'>
+            <div class="col-md-6 col-lg-3 my-3">
+              <h4 class='fs-20'>Post's</h4>
+              <p class='fs-18'>Por mês</p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p class='fs-18'>1</p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p class='fs-18'>2</p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p class='fs-18'>3</p>
+            </div>
+          </div>
+          <div class='row bg-item-plan'>
+            <div class="col-md-6 col-lg-3 my-3">
+              <h4 class='fs-20'>Post's</h4>
+              <p class='fs-18'>Por ano</p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p class='fs-18'>30</p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p class='fs-18'>60</p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p class='fs-18'>90</p>
+            </div>
+          </div>
+          <div class='row border-plan'>
+            <div class="col-md-6 col-lg-3 my-3">
+              <h4 class='fs-20'>Suporte</h4>
+              <p class='fs-18'>Suporte premium</p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p><%= image_tag('Checkmark_X') %></p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p><%= image_tag('Checkmark_X') %></p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p><%= image_tag('Checkmark-9') %></p>
+            </div>
+          </div>
+          <div class='row bg-item-plan'>
+            <div class="col-md-6 col-lg-3 my-3">
+              <h4 class='fs-20'>Post agendado</h4>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p><%= image_tag('Checkmark-9') %></p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p><%= image_tag('Checkmark-9') %></p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p><%= image_tag('Checkmark-9') %></p>
+            </div>
+          </div>
+          <div class='row border-plan'>
+            <div class="col-md-6 col-lg-3 my-3">
+              <h4 class='fs-20'>Templates</h4>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p><%= image_tag('Checkmark-9') %></p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p><%= image_tag('Checkmark-9') %></p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p><%= image_tag('Checkmark-9') %></p>
+            </div>
+          </div>
+          <div class='row bg-item-plan'>
+            <div class="col-md-6 col-lg-3 my-3">
+              <h4 class='fs-20'>Rede neural</h4>
+              <p class='fs-18'>Textos e imagens</p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p class='fs-18'>Ilimitado</p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p class='fs-18'>Ilimitado</p>
+            </div>
+            <div class="col-md-6 col-lg-3 my-3">
+              <p class='fs-18'>Ilimitado</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<%= render partial: 'shared/footer' %>

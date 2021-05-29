@@ -1,0 +1,187 @@
+.navbar-brand, .navbar-brand > img {
+  width: 243px !important;
+  heigth: 50px !important;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: #000 !important;
+}
+
+.cerebrum-sectionss{
+  position: absolute;
+}
+
+.cerebrum-section:before{
+  content: '';
+  position: absolute;
+  background: image-url('cerebro.png') no-repeat center center fixed;
+  top: 0;
+  display: block;
+}
+.cerebrum-sectionss:before{
+  content: '';
+  content: image-url('cerebro.png');
+  /*background: image-url('cerebro.png')*/
+  width: 100px;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  height: auto;
+  padding-left: 526px;
+  /*background: transparent image-url('cerebro.png') no-repeat;*/
+}
+
+.img-cerebrum img{
+  position: absolute;
+  top: 0;
+  width: auto;
+  height: 100%;
+  left: 36%;
+}
+
+.w-350{
+  width: 350px;
+}
+
+.w-260{
+  width: 260px;
+}
+
+.w-290{
+  width: 290px;
+}
+
+.pt-100{
+  padding-top: 100px;
+}
+
+.top-login{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.remove-border{
+  border: none !important;
+}
+
+.forgot-pwd-color{
+  color: #858A8F;
+}
+
+.bold-7-days span{
+  color: #000;
+  font-weight: 400;  
+}
+
+.bg-dark {
+  background-color: #567EBE !important;
+}
+
+.page-heading{
+  padding-top: 6rem !important;
+}
+
+.btn-access{
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+
+  padding-top: .25rem !important;
+  padding-bottom: .25rem !important;
+}
+
+.horizontal-line-words{
+  overflow: hidden;
+}
+
+.horizontal-line-wordsss span{
+  background:#fff;
+  padding:0 10px; 
+}
+
+.horizontal-line-words:before,
+.horizontal-line-words:after {
+    background-color: #EDF4FF;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 40%;
+}
+.horizontal-line-words:before {
+    right: 0.5em;
+    margin-left: -10%;
+}
+.horizontal-line-words:after {
+    left: 0.5em;
+    margin-right: -9%;
+}
+
+.s-rs{
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.fs-title-btn-plan{
+  font-size: 1.25rem
+}
+
+.float-left{
+  float: left;
+}
+
+.block-plan{
+  float: left;
+  clear: both;
+}
+
+.border-plan{
+  border: 1px solid #AAB0B7;
+}
+
+.by-value{
+  position: relative;
+  left: -37px;
+  top: 20px;
+  text-decoration: line-through;
+}
+
+.bg-item-plan{
+  background-color: #EDF4FF;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.opt-translate{
+  float: right;
+}
+
+.btn-default{
+  background-color: #ddd;
+}
+
+.w-400{
+  width: 400px;
+}
+
+.fs-18{
+  font-size: 1.125rem 
+}
+
+.fs-20{
+  font-size: 1.25rem;
+}
+
+.fs-24{
+  font-size: 1.5rem;
+}
+
+.fs-40{
+  font-size: 2.5rem;
+}
+
+.fs-48{
+  font-size: 3rem;
+}
